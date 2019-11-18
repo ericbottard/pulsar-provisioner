@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Run tests
       shell: bash
-      run: make build test
+      run: pwd && ls -al
     - name: Build using ko
       run: ko publish -L github.com/projectriff/pulsar-provisioner/cmd/provisioner
     - name: Deploy
